@@ -55,5 +55,20 @@ Deferred Equity Plan
         - deactivate renders contract's distribute fx unusable; also requires HR or employee
         -external payable to prevent ether from being sent to contract, it is meant to dist shares so no ether should be involved here
 
+---
+## Deployment & Use
 
 
+### Local Testing
+
+Associate Profit Splitter
+
+![](/Resources/AssociateProfitSplitter.gif)
+---
+
+Tiered Profit Splitter
+![](/Resources/TieredProfitSplitter.gif)
+---
+Deferred Equity 
+![](/Resources/DeferredEquityPlan.gif)
+---

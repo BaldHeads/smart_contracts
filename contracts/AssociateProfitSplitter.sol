@@ -26,7 +26,7 @@ contract AssociateProfitSplitter {
         employee_two.transfer(amount);
         employee_three.transfer(amount);
 
-        // @TODO: take care of a potential remainder by sending back to HR (`msg.sender`)
+        // take care of a potential remainder by sending back to HR (`msg.sender`)
         msg.sender.transfer(msg.value - (amount * 3));
     }
 

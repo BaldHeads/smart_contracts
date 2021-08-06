@@ -1,7 +1,10 @@
 pragma solidity ^0.5.0;
 
-// lvl 3: equity plan
+// lvl 3: equity plan 
+// replace all now with fakenow to test functionality on a local network
+
 contract DeferredEquityPlan {
+    // fakenow = now; //uncomment this for testing
     address humanResources;
 
     address payable employee; // bob
@@ -23,9 +26,9 @@ contract DeferredEquityPlan {
     }
     
     // fastFwd function FOR TESTING ONLY; make sure it is commented out for real deployment
-    // function fastFwd() public {
-    //     startTime += 100 days;
-    // }
+    function fastFwd() public {
+        fakenow += 100 days;
+    }
     
     function distribute() public {
         require(msg.sender == humanResources || msg.sender == employee, "You are not authorized to execute this contract.");
